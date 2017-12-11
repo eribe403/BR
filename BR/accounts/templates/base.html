@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>BR</title>
+	<meta charset="utf-8" />
+	{% load staticfiles %}
+ 	<!-- <link rel="shortcut icon" href="{% static 'info/img/textcube.png' %}"> -->
+	<meta name="viewport" content = "width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="{% static 'accounts/css/bootstrap.min.css' %}"/>
+</head>
+
+<body>
+	<!-- <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+	  <a class="navbar-brand" href="#">BR</a>
+    <ul class='nav navbar-nav navbar-right'>
+    	<li><a class="nav-item nav-link active" href="#">Register</a></li>
+    <ul>
+
+	</nav> -->
+	<nav class="navbar bg-warning navbar-dark">
+	  <a class="navbar-brand" href="#">BR</a>
+	  <ul class="nav navbar-nav navbar-right">
+	  	<li><a href='/account/register'>Register</a></li>
+	  </ul>
+	</nav> 
+  {% block content %}
+  {% endblock %}
+
+
+</body>
+
+</html>
